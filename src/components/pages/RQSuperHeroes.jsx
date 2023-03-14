@@ -6,7 +6,8 @@ const fetchSuperHeroes = () => axios.get('http://localhost:4000/superheroes')
 
 const RQSuperHeroes = () => {
   const { data, isLoading, isError, error } = useQuery('super-heroes', fetchSuperHeroes, {
-    cacheTime: 5000,
+    refetchInterval: 2000,
+    refetchIntervalInBackground: true,
   })
 
   if (isLoading) {
