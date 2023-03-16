@@ -10,3 +10,6 @@
 - refetchOnWindowsFocus: when we are on the view
 - Polling: refetchInterval: 2000, refetch data in regulars intervals, in this way always be updated - refetchIntervalInBackground: true, this allow fetch the data while we are not in the browser
 - onClick={refetch}: enable request just when we click for that, enabled: false
+- Success and Error Callbacks
+- Data Transformation
+- Custom Query Hooks
