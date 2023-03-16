@@ -2,7 +2,7 @@ import axios from 'axios'
 import React from 'react'
 import { useQuery } from 'react-query'
 
-const fetchSuperHeroes = () => axios.get('http://localhost:4000/superheroes1')
+const fetchSuperHeroes = () => axios.get('http://localhost:4000/superheroes')
 
 const RQSuperHeroes = () => {
   const onSuccess = (data) => console.log('Perfom side effect after data fetching', data)
@@ -13,6 +13,10 @@ const RQSuperHeroes = () => {
     enabled: false,
     onSuccess,
     onError,
+    select: (data) => {
+      const superHeroNames = data.data.map((hero) => hero.name)
+      return superHeroNames
+    },
   })
   console.log({ isLoading, isFetching })
 
@@ -27,8 +31,11 @@ const RQSuperHeroes = () => {
     <>
       <h2>SuperHeroes Page - React Query</h2>
       <button onClick={refetch}>Fetch Heroes</button>
-      {data.data.map((hero) => {
+      {/* {data.data.map((hero) => {
         return <div key={hero.name}>{hero.name}</div>
+      })} */}
+      {data?.map((heroName) => {
+        return <div key={heroName}>{heroName}</div>
       })}
     </>
   )
