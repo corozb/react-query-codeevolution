@@ -14,3 +14,5 @@
 - Success and Error Callbacks
 - Data Transformation
 - Custom Query Hooks
+- Query By Id
+- Parallel Queries

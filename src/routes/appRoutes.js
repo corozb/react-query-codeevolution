@@ -1,4 +1,5 @@
 import Home from '../components/pages/Home'
+import ParallelQueries from '../components/pages/ParallelQueries'
 import RQSuperHeroes from '../components/pages/RQSuperHeroes'
 import SuperHero from '../components/pages/SuperHero'
 import SuperHeroes from '../components/pages/SuperHeroes'
@@ -22,6 +23,11 @@ const appRoutes = [
   {
     path: '/rq-super-heroes/:heroId',
     component: SuperHero,
+  },
+  {
+    path: '/rq-parallel',
+    component: ParallelQueries,
+    title: 'Parallel Queries',
   },
 ]
 
