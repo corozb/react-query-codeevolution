@@ -1,3 +1,4 @@
+import DynamicParallel from '../components/pages/DynamicParallel'
 import Home from '../components/pages/Home'
 import ParallelQueries from '../components/pages/ParallelQueries'
 import RQSuperHeroes from '../components/pages/RQSuperHeroes'
@@ -7,27 +8,32 @@ import SuperHeroes from '../components/pages/SuperHeroes'
 const appRoutes = [
   {
     path: '/',
-    component: Home,
+    component: <Home />,
     title: 'Home',
   },
   {
     path: '/super-heroes',
-    component: SuperHeroes,
+    component: <SuperHeroes />,
     title: 'Traditional Super Heroes',
   },
   {
     path: '/rq-super-heroes',
-    component: RQSuperHeroes,
+    component: <RQSuperHeroes />,
     title: 'RQ Super Heroes',
   },
   {
     path: '/rq-super-heroes/:heroId',
-    component: SuperHero,
+    component: <SuperHero />,
   },
   {
     path: '/rq-parallel',
-    component: ParallelQueries,
+    component: <ParallelQueries />,
     title: 'Parallel Queries',
+  },
+  {
+    path: '/rq-dynamic-parallel',
+    component: <DynamicParallel heroIds={[1, 3]} />,
+    title: 'Dynamic Parallel',
   },
 ]
 
