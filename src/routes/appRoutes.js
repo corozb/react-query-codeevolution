@@ -1,5 +1,6 @@
 import Home from '../components/pages/Home'
 import RQSuperHeroes from '../components/pages/RQSuperHeroes'
+import SuperHero from '../components/pages/SuperHero'
 import SuperHeroes from '../components/pages/SuperHeroes'
 
 const appRoutes = [
@@ -17,6 +18,10 @@ const appRoutes = [
     path: '/rq-super-heroes',
     component: RQSuperHeroes,
     title: 'RQ Super Heroes',
+  },
+  {
+    path: '/rq-super-heroes/:heroId',
+    component: SuperHero,
   },
 ]
 

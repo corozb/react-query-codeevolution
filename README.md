@@ -4,6 +4,7 @@
 - Loading
 - Error Handling
 - React Query DevTools
+- Retry: How many time we gonna search for data in query
 - Cache: request data from cache, default: 5s
 - StaleTime: update the data every amount of seconds, default: 0
 - refetchOnMount: Automatically refetch data when the components was mount, default: true, values: true, false, 'always'

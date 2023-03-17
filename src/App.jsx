@@ -10,11 +10,15 @@ function App() {
         <div>
           <nav>
             <ul>
-              {appRoutes.map((link) => (
-                <li key={link.path}>
-                  <Link to={link.path}>{link.title}</Link>
-                </li>
-              ))}
+              {appRoutes.map((link) => {
+                if (link.title) {
+                  return (
+                    <li key={link.path}>
+                      <Link to={link.path}>{link.title}</Link>
+                    </li>
+                  )
+                }
+              })}
             </ul>
           </nav>
           <Routes>
