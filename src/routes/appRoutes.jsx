@@ -1,6 +1,7 @@
 import DependentQueries from '../components/pages/DependentQueries'
 import DynamicParallel from '../components/pages/DynamicParallel'
 import Home from '../components/pages/Home'
+import PaginatedQueries from '../components/pages/PaginatedQueries'
 import ParallelQueries from '../components/pages/ParallelQueries'
 import RQSuperHeroes from '../components/pages/RQSuperHeroes'
 import SuperHero from '../components/pages/SuperHero'
@@ -40,6 +41,11 @@ const appRoutes = [
     path: '/rq-dependent',
     component: <DependentQueries email='cristian@example.com' />,
     title: 'Dependent Queries',
+  },
+  {
+    path: '/rq-paginated',
+    component: <PaginatedQueries />,
+    title: 'Pagination',
   },
 ]
 

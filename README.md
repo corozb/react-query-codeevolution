@@ -19,3 +19,4 @@
 - Dynamic Parallel Queries: useQueries
 - Dependent Queries
 - initial Data: to caché queries
+- Pagination, keepPreviousData: true
