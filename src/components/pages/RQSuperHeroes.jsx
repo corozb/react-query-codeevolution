@@ -10,8 +10,6 @@ const RQSuperHeroes = () => {
   const { data, isLoading, isError, error, isFetching, refetch } = useSuperHeroesData(onSuccess, onError)
   console.log({ isLoading, isFetching })
 
-  console.log(data)
-
   if (isLoading || isFetching) {
     return <h2>Loading...</h2>
   }

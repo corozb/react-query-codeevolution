@@ -7,7 +7,6 @@ const fetchCoursesByChannelId = (channelId) => axios.get(`http://localhost:4000/
 
 const DependentQueries = ({ email }) => {
   const { data: user } = useQuery(['user', email], () => fetchUserByEmail(email))
-  console.log('data', user)
 
   const channelId = user?.data.channelId
 

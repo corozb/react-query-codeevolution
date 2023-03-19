@@ -4,7 +4,6 @@ import { useSuperHeroData } from '../../hooks/useSuperHeroData'
 
 const SuperHero = () => {
   const { heroId } = useParams()
-  console.log('id', heroId)
   const { data, isLoading, isFetching, isError } = useSuperHeroData(heroId)
 
   if (isLoading || isFetching) {
