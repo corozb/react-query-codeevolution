@@ -17,3 +17,4 @@
 - Query By Id
 - Parallel Queries
 - Dynamic Parallel Queries: useQueries
+- Dependent Queries

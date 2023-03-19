@@ -1,3 +1,4 @@
+import DependentQueries from '../components/pages/DependentQueries'
 import DynamicParallel from '../components/pages/DynamicParallel'
 import Home from '../components/pages/Home'
 import ParallelQueries from '../components/pages/ParallelQueries'
@@ -34,6 +35,11 @@ const appRoutes = [
     path: '/rq-dynamic-parallel',
     component: <DynamicParallel heroIds={[1, 3]} />,
     title: 'Dynamic Parallel',
+  },
+  {
+    path: '/rq-dependent',
+    component: <DependentQueries email='cristian@example.com' />,
+    title: 'Dependent Queries',
   },
 ]
 
