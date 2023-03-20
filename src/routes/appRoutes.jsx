@@ -1,6 +1,7 @@
 import DependentQueries from '../components/pages/DependentQueries'
 import DynamicParallel from '../components/pages/DynamicParallel'
 import Home from '../components/pages/Home'
+import InfiniteQueries from '../components/pages/InfiniteQueries'
 import PaginatedQueries from '../components/pages/PaginatedQueries'
 import ParallelQueries from '../components/pages/ParallelQueries'
 import RQSuperHeroes from '../components/pages/RQSuperHeroes'
@@ -46,6 +47,11 @@ const appRoutes = [
     path: '/rq-paginated',
     component: <PaginatedQueries />,
     title: 'Pagination',
+  },
+  {
+    path: '/rq-infinite',
+    component: <InfiniteQueries />,
+    title: 'Infinite Queries',
   },
 ]
 
