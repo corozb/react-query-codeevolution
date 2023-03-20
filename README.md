@@ -1,5 +1,9 @@
 # React Query
 
+[YouTube Playlist](https://www.youtube.com/watch?v=VtWkSCZX0Ec&list=PLC3y8-rFHvwjTELCrPrcZlo6blLBUspd2&index=1&ab_channel=Codevolution)
+
+[Repo](https://github.com/gopinav/React-Query-Tutorials/tree/master/react-query-demo)
+
 - Fetch Data
 - Loading
 - Error Handling
@@ -25,3 +29,4 @@
   - Query Invalidation: To update the data inmediatly the request was do it
   - Handling mutation response
   - Optimistic Updates: Peforming a mutation under the assumption that nothing can go wrong
+- Axios Interceptor
