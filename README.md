@@ -30,3 +30,7 @@
   - Handling mutation response
   - Optimistic Updates: Peforming a mutation under the assumption that nothing can go wrong
 - Axios Interceptor
+
+<img width="1233" alt="Screenshot 2023-03-20 at 9 21 24 AM" src="https://user-images.githubusercontent.com/37992878/226369593-926b0744-5d1c-4b3e-a9e7-ec3f05503edc.png">
+
+
