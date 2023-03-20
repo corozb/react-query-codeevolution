@@ -21,3 +21,4 @@
 - initial Data: to caché queries
 - Pagination, keepPreviousData: true
 - useMutation
+- Query Invalidation: To update the data inmediatly the request was do it
