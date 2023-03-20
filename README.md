@@ -20,6 +20,8 @@
 - Dependent Queries
 - initial Data: to caché queries
 - Pagination, keepPreviousData: true
-- useMutation
-- Query Invalidation: To update the data inmediatly the request was do it
-- Handling mutation response
+- Mutations:
+  - useMutation
+  - Query Invalidation: To update the data inmediatly the request was do it
+  - Handling mutation response
+  - Optimistic Updates: Peforming a mutation under the assumption that nothing can go wrong
